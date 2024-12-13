@@ -12,7 +12,14 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/28b5b180cd.js" crossorigin="anonymous"></script>
-
+{#<style>#}
+{#        body {#}
+{#            background-image: url("{% static 'images/background.PNG' %}");#}
+{#            background-size: 1220px 680px;;#}
+{#            background-repeat: no-repeat;#}
+{#            background-attachment: fixed;#}
+{#        }#}
+{#    </style>#}
 
 </head>
 <body>
@@ -21,26 +28,6 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}">Event Planner System</a>
-        <li class="nav-item">
-                        <a class="nav-link" href="">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Contact Us</a>
-                    </li>
-
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -74,6 +61,28 @@
         {% block content %}{% endblock %}
     </div>
 </div>
+ <footer>
+{#     #}
+{#      <!-- Contact Section -->#}
+{#            <div class="col-md-4">#}
+{#                <h5>Contact Us</h5>#}
+{#                <p>Email: vinynto1@gmail.com</p>#}
+{#                <p>Phone: 0795721226</p>#}
+{#                <p>Address: 123 Event St, Cityhallway</p>#}
+{##}
+{#                <!-- Social Media Links -->#}
+{#                <div>#}
+{#                    <a href="https://facebook.com" class="text-white me-3"><i class="fab fa-facebook"></i></a>#}
+{#                    <a href="https://twitter.com" class="text-white me-3"><i class="fab fa-twitter"></i></a>#}
+{#                    <a href="https://instagram.com" class="text-white"><i class="fab fa-instagram"></i></a>#}
+{#                </div>#}
+{#            </div>#}
+        <div class="text-center mt-3">
+            <p>&copy; {% now 'Y' %} Event Planner System Inc. All rights reserved.</p>
+        </div>
+    
+</footer>
+
 
 </body>
 </html>
